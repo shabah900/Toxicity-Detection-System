@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toxicity Detection</title>
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-4xl mx-auto">
+    <!-- User name part  -->
+    <div class="flex flex-col bg-white  rounded-lg p-4 mb-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">User name </h2>
+      <ul id="participants" class="text-gray-700  pl-5"></ul>
+    </div>
+
+    <!-- Messenger-Like Chatbox -->
+    <div class="bg-white shadow-md rounded-lg p-4 mb-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Chat</h2>
+      <div id="chatBox" class="h-96 overflow-y-auto bg-gray-50 border border-gray-300 p-4 rounded-md">
+        <p class="text-gray-500">No messages yet.</p>
+      </div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h1 class="text-2xl font-semibold text-gray-800 mb-4">Toxicity Detection</h1>
+      <input
+        id="username"
+        type="text"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        placeholder="Enter your username"
+      />
+      <textarea
+        id="message"
+        rows="3"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        placeholder="Type your message here..."
+      ></textarea>
+      <button
+        id="submitBtn"
+        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+      >
+        Send
+      </button>
+      <div id="warnings" class="mt-4 text-red-500 font-semibold"></div>
+    </div>
+  </div>
+
+
+  <script src="all.js/index.js"></script>
+</body>
+</html>
