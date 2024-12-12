@@ -9,16 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"> 
 </head>
 
-<body style="background-color: #020127;">
+<body style="background-color: #070174;">
   <div class="max-w-4xl mx-auto p-4">
 
     <div class="text-center mb-4 mt-4">
-      <span style="background-color: #f14b4b; border-radius: 100px; padding: 10px 20px; display: inline-block; font-family: 'Creepster', cursive; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: #00f500;">Toxicity Detection</span>
+      <span style="background-color: #ff0000; border-radius: 100px; padding: 10px 20px; display: inline-block; font-family: 'Revalia', cursive; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: #dfdfdf;">Toxicity Detection</span>
     </div>
 
     <div class="flex flex-col md:flex-row">
@@ -39,7 +39,7 @@
 
 
       <div class="w-full md:w-1/2  shadow-md rounded-lg p-4 md:ml-4" style="background-color: hwb(76 65% 0%);">
-        <div style="background-color: #f0ffff; padding: 10px; border-radius: 10px; margin-bottom: 10px; border: 2px solid black;"> 
+        <div style="background-color: #f0ffff; padding: 10px; border-radius: 10px; margin-bottom: 10px; border: 2px solid rgb(0, 0, 0);"> 
           <h2 class="text-xl font-semibold" style="font-family: 'Oswald', sans-serif; color: #0000ff; font-weight: 700;">Chat</h2> 
         </div>
         <div id="chatBox" class="h-96 overflow-y-auto p-4 rounded-md" style="border: 2px solid #ff0000;"> 
@@ -50,13 +50,12 @@
     </div>
   </div>
 
-  <dialog id="my_modal_2" class="modal rounded-3xl pt-24" style="background-color: #f14b4b;">
-    <div  class="modal-box w-[350px] h-[300px] lg:h-[500px] lg:w-[700px]  ">
-      <h3 style="color: #00f500;" class="text-3xl lg:text-6xl font-bold text-center "> You Are Banned </h3>
-      <p style="color: #00f500;"style="color: #00f500;" class="sm:w-[200px] text-lg lg:text-2xl font-medium text-center py-4">For your repeated toxic behavior </p>
-    <p id="timer" class="text-center text-9xl font-black text-teal-500 pt-6"></p>
+  <dialog id="my_modal_2" class="modal rounded-3xl pt-24" style="background-color: #ff0505; text-shadow: 2px 2px 4px black;">
+    <div class="modal-box w-[350px] h-[300px] lg:h-[500px] lg:w-[700px] flex flex-col items-center justify-center">
+      <h3 style="color: #ffffff; text-shadow: 2px 2px 4px black;" class="text-3xl lg:text-6xl font-bold text-center">YOU ARE BANNED</h3>
+      <p style="color: #ffffff; text-shadow: 2px 2px 4px black;" class="sm:w-[200px] text-lg lg:text-2xl font-medium text-center py-4">For your repeated toxic behavior</p>
+      <p id="timer" class="text-center text-9xl font-black text-teal-500 pt-6"></p>
     </div>
-   
   </dialog>
 
   <footer class="text-center mt-4" style="color: white;">
