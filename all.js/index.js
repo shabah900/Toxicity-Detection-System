@@ -82,6 +82,7 @@ class TrieNode {
       warningsDiv.textContent = `Warning ${user.warnings}: Toxic message detected.`;
   
       if (user.warnings >= 3) {
+        adoptModal()
         user.banned = true;
         warningsDiv.textContent = `User "${username}" is banned for repeated toxic behavior.`;
         return;
@@ -114,4 +115,19 @@ class TrieNode {
   
     messageInput.value = "";
   });
+
+  const adoptModal = () => {
+
+    my_modal_2.showModal();
+
+
+    setTimeout(closeModal , 4000);
+
+}
+
+const closeModal = () => {
+  const toClose = document.getElementById('my_modal_2')
+  toClose.close();
+  
+}
   
